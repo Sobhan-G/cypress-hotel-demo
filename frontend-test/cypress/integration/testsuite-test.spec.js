@@ -1,22 +1,28 @@
 /// <reference types="cypress" />
 
 
-// test suite
+// testsuite-test
 
-describe('test suit example', function(){
+describe('perfom a valid login', function(){
 
     it('testcase-1', function(){
 
-      cy.visit('')
-      cy.contains('Affordable Professional Web Design')
-      cy.get(':nth-child(2) > a').click()  
-      cy.contains('About Us')
-      cy.get(':nth-child(3) > a').click()     
-      cy.contains('Services') 
-      cy.get('form > input').type('mashti10@hotmail.com')
-      cy.get('.container > form > .button_1').click()
+      cy.visit('http://localhost:3000/login?redirect=%2Flogin')
+      cy.title('Testers Hotel')
+      cy.wait(1000)
+      cy.contains('Login')
+      cy.wait(1000)
+      cy.get(':nth-child(1) > input').type('tester01')
+      cy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c')
+      cy.wait(1000)
+      cy.get('.btn').click()
+      cy.wait(1000)
+      cy.contains('Tester Hotel Overview')
+      cy.wait(1000)
+      cy.get('.user > .btn').click()
+      
 
-
+      
     })
 
 })
