@@ -3,9 +3,9 @@
 
 // testsuite-test
 
-describe('perfom a valid login', function(){
+describe('perfom a valid login and create a room', function(){
 
-    it('testcase-test', function(){
+    it('testcase-1', function(){
 
       cy.visit('http://localhost:3000/login?redirect=%2Flogin')
       cy.title('Testers Hotel')
@@ -19,9 +19,11 @@ describe('perfom a valid login', function(){
       cy.wait(1000)
       cy.contains('Tester Hotel Overview')
       cy.wait(1000)
-      cy.get('.user > .btn').click()
-      
-
+      cy.get(':nth-child(1) > .btn').click()
+      cy.get('h2 > .btn').click()
+      cy.contains('New Room')
+      cy.get(':nth-child(1) > select').select('double (#1)')
+      // cy.get(':nth-child(1) > select').should('have.value. Double')
       
     })
 
