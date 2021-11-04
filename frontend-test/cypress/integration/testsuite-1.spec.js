@@ -22,9 +22,23 @@ describe('perfom a valid login and create a room', function(){
       cy.get(':nth-child(1) > .btn').click()
       cy.get('h2 > .btn').click()
       cy.contains('New Room')
-      cy.get(':nth-child(1) > select').select('double (#1)')
-      // cy.get(':nth-child(1) > select').should('have.value. Double')
+      cy.get(':nth-child(1) > select').select('double')
+      cy.get(':nth-child(2) > input').type('2')
+      cy.get(':nth-child(3) > input').type('10')
+      cy.get(':nth-child(5) > input').type('4500')
+      cy.get('[value="penthouse"]')
+      cy.get('.blue').click()
+      cy.wait(1000)
+      cy.get(':nth-child(3) > .btn').click()
+      cy.wait(1000)
+      cy.get('.user > .btn').click()
+      cy.wait(1000)
+      cy.contains('Login')
+
+
+
       
+     
     })
 
 })
