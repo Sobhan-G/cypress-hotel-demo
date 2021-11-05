@@ -7,7 +7,7 @@ describe('perfom a valid login and create a room', function(){
 
     it('testcase-1', function(){
 
-      cy.visit('http://localhost:3000/login?redirect=%2Flogin')
+      cy.visit('http://localhost:3000')
       cy.title('Testers Hotel')
       cy.wait(1000)
       cy.contains('Login')
