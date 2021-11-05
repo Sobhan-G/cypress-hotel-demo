@@ -14,7 +14,7 @@ function checkTitleofIndexpage(){
  cy.title().should('eq',TitleofIndexpage)
 
 }
-function  performValidLogin(cy, username,password,ContentToConfirm){
+function performValidLogin(cy, username,password,ContentToConfirm){
 
     cy.get(usernameTextfield).type(username)
     cy.get(passwordTextfield).type(password)
