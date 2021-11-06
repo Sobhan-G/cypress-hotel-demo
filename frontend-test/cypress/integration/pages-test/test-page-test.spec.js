@@ -2,27 +2,23 @@
 
 import * as indexfunc from '../../pages/indexpage'
 import * as dashboardfunc from '../../pages/dashboard'
+import * as targets from '../../targets/targets'
+
 
 
 // testcase1-pages
 
 describe('perfom a valid login ', function(){
 
-   //  beforeEach(() => {
+   
 
-        
+    it('testcase-test-pages', function(){
 
-
-    //})
-
-
-    it('testcase-1-pages', function(){
-
-        cy.visit('http://localhost:3000')
+        cy.visit(targets.base_url)
         cy.wait(2000)
         indexfunc.checkTitleofIndexpage(cy)
         cy.wait(3000)    
-        indexfunc.performValidLogin(cy, 'tester01','GteteqbQQgSr88SwNExUQv2ydb7xuf8c','Tester Hotel Overview')
+        indexfunc.performValidLogin(cy,targets.username,targets.password,'Tester Hotel Overview')
         cy.wait(2000)
         dashboardfunc.performLogout(cy, 'Login')
      
