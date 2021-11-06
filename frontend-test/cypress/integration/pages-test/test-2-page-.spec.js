@@ -1,7 +1,16 @@
 /// <reference types="cypress" />
 
 import * as indexfunc from '../../pages/indexpage'
-import * as dashboardfunc from '../../pages/dashboard'
+import * as c from '../../pages/dashboard'
+import * as c from '../../pages/bills'
+import * as c from '../../pages/clients'
+import * as c from '../../pages/hotel-overview'
+import * as c from '../../pages/reservations'
+import * as c from '../../pages/rooms'
+import * as c from '../../pages/newbill'
+import * as c from '../../pages/newclient'
+import * as c from '../../pages/newreservation'
+import * as c from '../../pages/newroom'
 import * as targets from '../../targets/targets'
 
 

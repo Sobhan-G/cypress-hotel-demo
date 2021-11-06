@@ -18,21 +18,12 @@ function checkdashboardpage(cy){
 
 }
 
+function checkdashboardpage(cy){
 
-
-function performLogout (cy, ContentToConfirm){
-
-   cy.get(logoutbutton).click()
-    
-   cy.contains(ContentToConfirm)
-
+    cy.get(logoutbutton).click()
+    cy.get(roomspabutton).click()
+    cy.get(billpabutton).click()
+    cy.get(clientpabutton).click()
+    cy.get(reservationpabutton).click()
+  
 }
-    // export
-
- /*module.exports = {
-
-    checkdashboardpage,
-    performLogout
-    
-} 
-*/
