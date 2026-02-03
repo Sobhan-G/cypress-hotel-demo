@@ -1,28 +1,29 @@
 # Cypress Hotel Demo
 
-Projekt genomfört inom ramen för QA-utbildning med fokus på E2E-testautomation.
+This project was developed as part of a **QA Education** program, focusing on **End-to-End (E2E) test automation**.
 
-# Cypress Hotel Demo – Frontend Test Automation
+The repository contains automated frontend tests for a hotel booking web application, simulating realistic user flows to ensure application stability.
 
-This repository contains end-to-end frontend tests for a hotel booking web application.
-The project was developed as part of a QA education and focuses on realistic user flows and validation.
+## 🛠 Tech Stack
+* **Cypress** (Core Framework)
+* **JavaScript** (Scripting Language)
+* **Node.js** (Runtime Environment)
+* **Mocha** (Built-in Test Runner)
 
-## Tech stack
-- Cypress
-- JavaScript
-- Node.js
-- Mocha (Cypress built-in)
+## 🎯 Test Coverage
+* **Hotel Booking Flow:** Validation of the "Happy Path" from start to finish.
+* **Form Validation:** Ensuring user inputs and booking confirmations work as expected.
+* **Error Handling:** Testing edge cases and system resilience.
 
-## Test coverage
-- Hotel booking flow (happy path)
-- Form validation and booking confirmation
-- Error handling and edge cases
+## 🚀 Setup & Run
 
-## Setup & run
-```bash
-git clone https://github.com/Sobhan-G/cypress-hotel-demo.git
-cd cypress-hotel-demo
-npm install
-npx cypress open
+Follow these steps to run the tests locally:
 
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Sobhan-G/cypress-hotel-demo.git](https://github.com/Sobhan-G/cypress-hotel-demo.git)
+   cd cypress-hotel-demo
 
+   npm install
+
+   npx cypress open
