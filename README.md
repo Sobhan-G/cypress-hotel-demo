@@ -1,44 +1,28 @@
 # Cypress Hotel Demo
 
-Detta projekt är ett övningsprojekt där jag testat en hotellbokningsapplikation med hjälp av Cypress – 
-emett populärt verktyg för frontend-testautomatisering.
+Projekt genomfört inom ramen för QA-utbildning med fokus på E2E-testautomation.
 
-Innehåll
-- End-to-end tester av hotellbokningsflöde
-- Validering av formulär och bokningsbekräftelse
-- Test av felhantering och edge cases
+# Cypress Hotel Demo – Frontend Test Automation
 
-Tekniker & verktyg
+This repository contains end-to-end frontend tests for a hotel booking web application.
+The project was developed as part of a QA education and focuses on realistic user flows and validation.
+
+## Tech stack
 - Cypress
 - JavaScript
 - Node.js
-- Mocha (inbyggt i Cypress)
+- Mocha (Cypress built-in)
 
- Kom igång
-1. Klona detta repo:
-bash
+## Test coverage
+- Hotel booking flow (happy path)
+- Form validation and booking confirmation
+- Error handling and edge cases
+
+## Setup & run
+```bash
 git clone https://github.com/Sobhan-G/cypress-hotel-demo.git
 cd cypress-hotel-demo
-Perfekt! Här är förbättrade README-förslag för de tre projekten.
-Du kan enkelt kopiera in dem i dina projekt och anpassa smådetaljer om det behövs:
-
-
-
-2. Installera beroenden:
-bash
 npm install
-
-
-3. Starta tester:
-```bash
 npx cypress open
 
-## Exempel på testfall
-- Boka ett rum med korrekt inmatning – kontrollera bekräftelse.
-- Försök boka med ogiltiga datum – valideringsfel ska visas.
-- Säkerställ att användaren inte kan lämna obligatoriska fält tomma.
-
-## Syfte & lärdomar
-Syftet med projektet var att utveckla mina kunskaper i Cypress och testautomatisering av webbapplikationer.
-Jag fokuserade på realistiska testscenarier och att skriva läsbar och återanvändbar kod.
 
