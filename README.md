@@ -27,3 +27,14 @@ Follow these steps to run the tests locally:
    npm install
 
    npx cypress open
+
+   
+## Project Structure & Approach
+The tests are structured to resemble real-world QA work in an agile team:
+
+- Tests are grouped by feature and user flow
+- Reusable selectors and commands are used where applicable
+- Focus on readable and maintainable test cases
+- Test scenarios are written from an end-user perspective
+
+This project reflects how I approach frontend test automation in practice.
